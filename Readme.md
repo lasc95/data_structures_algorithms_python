@@ -2,6 +2,10 @@
 
 This repository is dedicated to the study and implementation of various algorithms and data structures. Below is a list of the topics that will be covered:
 
+# Repositorio Algoritmos y Estructuras de datos
+
+Este repositorio está orientado al estudio e implementación de los algoritmos y estrucuras de datos. A continuación proporcionaré:
+
 ## Data Structures:
 
 1. **Arrays**
