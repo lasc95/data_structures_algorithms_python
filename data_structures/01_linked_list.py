@@ -11,7 +11,7 @@ que el puntero almacena la referencia al siguiente Nodo, generando una secuencia
 
 class Node:
     def __init__(self, data=None):
-        self.data = data # la data almacenada
+        self.data = data # la data almacenada (ejemplo: int 1)
         self.next = None # referencia al nodo siguiente
 
 class LinkedList:
@@ -25,7 +25,7 @@ class LinkedList:
             cur = self.head # empezamos desde la cabeza
             while cur.next: # Mientras el nodo actual tenga un siguiente nodo
                 cur = cur.next # avanzamos al siguiente nodo
-            cur.next = Node(data) # creamos un nuevo Nodo al final de la lista
+            cur.next = Node(data) # creamos un nuevo Nodo al final de la lista. cur.next es el nodo final de nuestra lista
 
     # Método para mostrar los datos de la lista
     def display(self):
@@ -38,6 +38,7 @@ class LinkedList:
 l1 = LinkedList()
 l1.insert(1)
 l1.insert(2)
+l1.insert(3)
 
 # Mostrar los datos de la lista enlazada
 l1.display()
