@@ -32,14 +32,14 @@ class DirectedGraph:
             self.adj_list[v] = []
 
     def add_edge(self, u, v):
-        # agrega una arista dirigidade u a v
+        # agrega una arista dirigidade nodo "u" a nodo "v"
         if u in self.adj_list and v in self.adj_list:
             self.adj_list[u].append(v)
         else:
             raise ValueError("uno o ambos vértices no existen.")
         
     def remove_vertex(self, v):
-        # elimina un vértice y todas sus aristas asociadas
+        # elimina un vértice (nodo) y todas sus aristas asociadas
         if v in self.adj_list:
             # eliminamos todas las aristas que apuntan a ese vértice
             for key in self.adj_list:
@@ -81,4 +81,5 @@ grafo.add_edge('A', 'C')
 
 print("Vértices (nodos) del grafo:", grafo.get_vertices())
 print("Aristas (enlaces) del grafo:", grafo.get_edges())
+print('\n')
 print("Representación del grafo:\n", grafo)
