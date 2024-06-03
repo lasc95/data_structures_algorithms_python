@@ -38,7 +38,7 @@ class DirectedGraph:
             self.adj_list[u].append(v)
         else:
             raise ValueError("uno o ambos vértices no existen.")
-        
+
     def remove_vertex(self, v):
         # elimina un vértice (nodo), todas sus conexiones asociadas
         if v in self.adj_list: # verificamos si el nodo existe
